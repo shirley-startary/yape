@@ -1,0 +1,22 @@
+body{
+
+}
+.carousel{
+  height: 87vh !important;
+}
+
+.btn{
+  background-color: #fbd43b;
+}
+.carousel .indicators .indicator-item{
+  background-color: #f8f8f8;
+}
+.carousel .indicators .indicator-item.active{
+  background-color: #f64552
+}
+.contenedor-imagen{
+  width: 150px;
+}
+/*.contenedor-imagen img{
+  margin: 0 auto;
+}*/

@@ -17,9 +17,16 @@ const format = morganjson({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
+app.use("/otraliga",express.static(__dirname+ './views'));
+app.use("/static",express.static(__dirname + '/node_modules'));
+
 app.use(morgan(format));
 
 let router = express.Router();
+
+app.get('/', function(req,res){
+  res.sendFile(__dirname + '/public/index.html');
+})
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
