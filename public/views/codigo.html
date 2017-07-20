@@ -3,36 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrate</title>
+    <title>Codigo de Validación</title>
     <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <section class="container center">
       <div class="row contenedor-imagen">
-          <img src="../img/icons/phone.png" alt="phone" class="col s12 center">
+          <img src="../img/icons/message.png" alt="phone" class="col s12 center">
       </div>
       <div class="row contenedor-titulo">
-        <h5 class="col s12">Para comenzar validemos tu numero</h5z>
+        <h5 class="col s12">Ahora ingresa tu codigo</h5z>
       </div>
       <div class="row constenedor-descripcion">
-        <p class="col s12">Recibiras un SMS con un codigo de validación</p>
+        <p class="col s12">Enviamos un SMS con el codigo de verificacion al numero </p>
+        <p id="mostrarNumeroTelefono">1231313131</p>
       </div>
-      <div class="row contenedor-formulario">
+      <div class="row contenedor-formulario center">
         <form class="col s12" action="#">
           <div class="row">
             <div class="input-field col s12">
               <div class="">
-                <img src="../img/icons/phoneandnumber.png" alt="phone-codigo">
-                <input id="numberTelephone" type="tel" class="validate">
+                <img src="../img/icons/lock.png" alt="codigo-verificacion">
+                <input type="text" placeholder="- - - - -">
               </div>
-              <div>
-                <input type="checkbox" class="filled-in" id="terminos" />
-                <label for="terminos">Acepto los <a href="#">Terminos y condiciones</a></label>
+              <div class="contador center">
+                <p>reintente en </p>
               </div>
             </div>
           </div>
-          <button class="btn disabled" type="submit" id="registrarNumero" name="button">Continuar</button>
         </form>
       </div>
     </section>

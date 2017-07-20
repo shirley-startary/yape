@@ -17,7 +17,7 @@ const format = morganjson({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
-app.use("/otraliga",express.static(__dirname+ './views'));
+// app.use("/otraliga",express.static(__dirname+ './views'));
 app.use("/static",express.static(__dirname + '/node_modules'));
 
 app.use(morgan(format));
