@@ -1,3 +1,5 @@
+var codigoValidaciones =localStorage.getItem("Codigo");
+var telefono = localStorage.getItem("Telefono");
 
 function cargarPagina(){
 	$('.carousel.carousel-slider').carousel({fullWidth: true});
@@ -5,6 +7,7 @@ function cargarPagina(){
 	$("#numberTelephone").keyup(validacion);
 	$("#terminos").change(validacion);
 	$("#registrarNumero").click(peticionCodigo);
+	$("#inputCodigoVerif").keyup(validacionCodigo);
 }
 
 function redireccionar(){
@@ -31,14 +34,40 @@ function peticionCodigo(e){
 	e.preventDefault();
 	var url = "http://localhost:3000/api/registerNumber";
 	var $valorTelefono = $("#numberTelephone").val();
+	localStorage.setItem("Telefono", $valorTelefono );
 	$.post(url,{
 		"phone":$valorTelefono,
 		"terms":true
-	},
-	function(response){
-		location.href="codigo.html";
-		alert("Su codigo de Validación es: "+response.data.code);
-	})
+		},
+		function(response){
+			location.href="codigo.html";
+			var $codigoApi=response.data.code;
+			localStorage.setItem("Codigo",$codigoApi)
+			// console.log($codigoApi);
+			alert("Su codigo de Validación es: "+response.data.code);
+		});
 }
+
+function reenviarCodigo(){
+	var url = "http://localhost:3000/api/resendCode";
+	$.post(url,{
+		"phone":telefono
+		},
+		function(response){
+			console.log(response);
+		});
+}
+
+function validacionCodigo() {
+	var codigo = $("#inputCodigoVerif").val()
+	var largoCodigo = $("#inputCodigoVerif").val().length;
+	if (largoCodigo == 6) {
+		if (codigo != codigoValidaciones) {
+			alert("Codigo Invalido!");
+		} else if (codigo == codigoValidaciones) {
+			location.href = "pantalla4.html";
+		}
+	}
+};
 
 $(document).ready(cargarPagina);
