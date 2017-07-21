@@ -20,3 +20,9 @@ body{
 /*.contenedor-imagen img{
   margin: 0 auto;
 }*/
+.input-field label img{
+  width: 5%;
+}
+.contador p img{
+  width: 7%;
+}
