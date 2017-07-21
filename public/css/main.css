@@ -17,8 +17,8 @@ section{
   background-color: #f64552
 }
 .contenedor-imagen{
-  width: 150px;
-  margin: 10% auto 2% !important;
+  width: 150px !important;
+  margin: 10% 27% 2% !important;
 }
 
 img{
@@ -33,6 +33,12 @@ img{
 .input-field label img{
   width: 50%;
 }
+.imagenPeque{
+  width: 5% !important;
+}
+#imagTelCodPais{
+  width: 19% !important;
+}
 .contador p img{
   width: 7%;
 }
@@ -42,12 +48,9 @@ img{
 }
 
 .imgCheck {
-  height: 15vh;
-}
+    margin: 23% 16% 2% !important;
+  }
 
-.contendorRow {
-  margin-top: 60%;
-}
 form p{
   text-align: center;
 }
