@@ -16,13 +16,36 @@ body{
 }
 .contenedor-imagen{
   width: 150px;
+  margin: 10% auto 2% !important;
+}
+section{
+  width: 100vh;
+  height: 100vh;
 }
 /*.contenedor-imagen img{
   margin: 0 auto;
 }*/
+.input-field {
+     margin-top: 0;
+}
 .input-field label img{
-  width: 5%;
+  width: 50%;
 }
 .contador p img{
   width: 7%;
+}
+
+.fondo-Amarillo {
+  background-color: #fbd43b;
+}
+
+.imgCheck {
+  height: 15vh;
+}
+
+.contendorRow {
+  margin-top: 60%;
+}
+form p{
+  text-align: center;
 }
