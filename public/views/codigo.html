@@ -17,18 +17,18 @@
       </div>
       <div class="row constenedor-descripcion">
         <p class="col s12">Enviamos un SMS con el codigo de verificacion al numero </p>
-        <p id="mostrarNumeroTelefono">1231313131</p>
+        <p id="mostrarNumeroTelefono"></p>
       </div>
       <div class="row contenedor-formulario center">
         <form class="col s12" action="#">
           <div class="row">
-            <div class="input-field col s12">
-              <div class="">
-                <img src="../img/icons/lock.png" alt="codigo-verificacion">
-                <input type="text" placeholder="- - - - -" id="inputCodigoVerif" >
+            <div class="col s12">
+              <div class="input-field col s12">
+                <input type="text" id="inputCodigoVerif" >
+                <label for="inputCodigoVerif"><img src="../img/icons/lock.png" alt="codigo-verificacion"/></label>
               </div>
-              <div class="contador center">
-                <p>reintente en <img src="" alt=""></p>
+              <div class="contador col s12">
+                <p>Reintente en <img src="../img/icons/clock.png" alt="reloj">21s</p>
               </div>
             </div>
           </div>
@@ -40,5 +40,7 @@
     <script type="text/javascript" src="../static/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../static/materialize-css/dist/js/materialize.min.js"></script>
     <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/codigo.js"></script>
+
   </body>
 </html>
