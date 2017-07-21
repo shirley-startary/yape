@@ -24,22 +24,22 @@
             <div class="col s12">
               <div class="nombre input-field">
                 <input id="nombreUsuario" type="text" class="validate">
-                <label for="nombreUsuario"><img src="../img/icons/user.png" alt="nombre"></label>
+                <label for="nombreUsuario" data-error="wrong" data-success="right"><img src="../img/icons/user.png" alt="nombre"></label>
               </div>
               <div class="email input-field">
                 <input id="email" type="email" class="validate">
                 <label for="email" data-error="wrong" data-success="right"><img src="../img/icons/message-gray.png" alt="email"></label>
               </div>
-              <div class="password input-field">
-                <input id="password" type="password" class="validate">
-                <label for="password"><img src="../img/icons/lock.png" alt="password"></label>
+              <div class="password input-field center">
+                <input id="password" type="password" class="validate " >
+                <label for="password" data-error="wrong" data-success="right"><img src="../img/icons/lock.png" alt="password"></label>
               </div>
             </div>
             <div class="col s12">
               <p>Cuida esta clave como oro,es tu acceso a Yape.</p>
             </div>
           </div>
-          <button class="btn disabled" type="submit" id="crearUsuario" name="button">Crear Usuario</button>
+          <button class="btn disabled" type="submit" id="btnCrearUsuario" name="button">Crear Usuario</button>
         </form>
       </div>
     </section>
