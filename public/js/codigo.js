@@ -1,5 +1,5 @@
 function cargarPagina(){
-  pedirNuevoCodigo();
+  // pedirNuevoCodigo();
 }
 function pedirNuevoCodigo(){
   $("#mostrarNumeroTelefono").text(localStorage.getItem("Telefono"));

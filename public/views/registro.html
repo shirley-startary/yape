@@ -9,22 +9,24 @@
   </head>
   <body>
     <section class="container center">
-      <div class="row contenedor-imagen">
-          <img src="../img/icons/phone.png" alt="phone" class="col s12 center">
-      </div>
-      <div class="row contenedor-titulo">
-        <h5 class="col s12">Para comenzar validemos tu numero</h5z>
-      </div>
-      <div class="row constenedor-descripcion">
-        <p class="col s12">Recibiras un SMS con un codigo de validación</p>
+      <div class="row ">
+        <div class="col s12 contenedor-imagen">
+          <img src="../img/icons/phone.png" alt="phone">
+        </div>
+        <div class="col s12 contenedor-titulo">
+          <h5 >Para comenzar validemos tu numero</h5>
+        </div>
+        <div class="col s12 constenedor-descripcion">
+          <p>Recibiras un SMS con un codigo de validación</p>
+        </div>
       </div>
       <div class="row contenedor-formulario">
         <form class="col s12" action="#">
           <div class="row">
-            <div class="input-field col s12">
-              <div class="">
-                <img src="../img/icons/phoneandnumber.png" alt="phone-codigo">
-                <input id="numberTelephone" type="tel" class="validate">
+            <div class="col s12">
+              <div class="input-field">
+                <input id="numberTelephone" type="number" class="validate">
+                <label for="numberTelephone"><img id="imagTelCodPais"src="../img/icons/phoneandnumber.png" alt="telefono"/></label>
               </div>
               <div>
                 <input type="checkbox" class="filled-in" id="terminos" />
@@ -36,6 +38,7 @@
         </form>
       </div>
     </section>
+
 
 
     <script type="text/javascript" src="../static/jquery/dist/jquery.min.js"></script>
